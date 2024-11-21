@@ -59,6 +59,26 @@
         </div><br><br>
         <p class="para"><a href="https://www.google.com/">Lorem Ipsum</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nobis expedita incidunt numquam. Molestias magnam eum voluptatem excepturi dolorem blanditiis id impedit sapiente suscipit distinctio. <a href="https://www.google.com/" target="_blank">Skibidi</a></p>
         
+        <div class="code-container">
+          <pre id="code-block">
+              <code>
+int main()
+{
+  float num1, num2;
+                  
+  printf("Enter the two numbers: ");
+  scanf("%f %f", &num1, &num2);
+                  
+  printf("The sum of %f and %f is %f\n", num1, num2, num1 + num2);
+  printf("The difference of %f and %f is %f\n", num1, num2, num1 - num2);
+                  
+  return 0;
+}
+              </code>
+          </pre>
+          <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+
         <br><br>
         <h2 id="life">Life</h2>
         <p class="para">Life revives you automatically if you hit the pipes. There will be 3 lives in each game session. After you have used all the 3 lives and hit a pipe, you will either die or you can use <a href="#diamond">Diamond</a> to revive again.</p>
@@ -82,6 +102,7 @@
         <p id="footer_text"></p>
         </footer>
         <script type="text/javascript" src="../scripts/footer_text.js"></script>
+        <script type="text/javascript" src="../scripts/code_block.js"></script>
         <!-- Footer icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

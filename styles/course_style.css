@@ -32,3 +32,44 @@ h1, h2{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+/* Code Block starts */
+
+.code-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: #f4f4f4; */
+    background-color: #1e1e1e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 15px;
+}
+
+pre {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Courier New", monospace;
+    color: #dcdcdc;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Code Block ends  */
