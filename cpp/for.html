@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to print the numbers from 1 to 10.</h1>
+            <p class="para"><b>Using " for " loop</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>27/07/2025</cite> OR <cite>July 27, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,53 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program that uses a " for " loop to print numbers from 1 to 10.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        for(int i = 1; i <= 10; i++)
+                        {
+                            cout << i << " ";
+                        }
+
+                    getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4>
+        <ol class="para">
+            <li>The " for " loop initializes a variable " i " to 1.</li>
+            <li>The condition " i <= 10 " is checked.</li>
+            <li>If the condition is true, the block of code inside the loop executes, printing the value of " i ".</li>
+            <li>The increment statement " i++ " increments " i " by 1.</li>
+            <li>Steps 2-4 repeat until the condition " i <= 10 " is false.</li>
+        </ol>
+        <br>
+        <h4>Program Output:</h4>
+        <p class="para">The program will print the numbers from 1 to 10: <br> 1 2 3 4 5 6 7 8 9 10.</p>
+        <br>
+        <h4>Advantages of " for " loops:</h4>
+        <ul class="para">
+            <li><b>Compact syntax:</b>The " for " loop cpmbimes initialization, condition, and increment in a single statement.</li>
+            <li><b>Easy to read:</b>The " for " loop is often more readable than other loops, especially for simple iterations.</li>
+        </ul>
+        <br>
+        <h5>Summary:</h5>
+        <p class="para">This program demonstrates the basic use of a " for " loop in C++. <br>The " for " loop is a popular choice for iterating over a range of values or performing a task a fixed number of times.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

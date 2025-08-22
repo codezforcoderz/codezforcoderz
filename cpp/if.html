@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to determine if a number entered by user is positive.</h1>
+            <p class="para"><b>Using " if " statement.</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>26/07/2025</cite> OR <cite>July 26, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -54,20 +55,52 @@
         <hr>
         <br><br>
         <div class="text-center">
-        <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a simple program in Turbo C++ that uses a " if " statement without an " else " clause to print a message if the user entered number is positive.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        int num;
+
+                        cout << "Enter a number: ";
+                        cin >> num;
+
+                        if (num > 0)
+                        {
+                            cout << "The number is positive";
+                        }
+                        getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4><br>
+        <ol class="para">
+            <li>The program asks the user to enter a number. ( cout << "Enter a number:";)</li>
+            <li>The " if " statement checks whether the number is greater than 0. (if (num > 0) )</li>
+            <li>If the condition is true, the program prints "The number is positive." ( cout << "The number is positive")</li>
+            <li>If the condition is false, the program does nothing and waits for a key press.</li>
+        </ol><br>
+        <h4>Example Output:</h4><br>
+        <ul class="para">
+            <li>If the user enters, a number greater than 0, suppose 5, the program will print "The number is positive".</li>
+            <li>If the user enters 0, or a negative number, suppose -5, the program won't do anything and it'll wait for a key press to go back.</li>
+        </ul><br>
+        <h5>Summary:</h5><br>
+        <p class="para">This program demonstrates the basic use of an " if " statement without an " else " clause in Turbo C++. <br>If the condition is not met, the program simply continues executing without taking any action.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

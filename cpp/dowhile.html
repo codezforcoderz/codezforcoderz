@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to print the numbers from 1 to 10.</h1>
+            <p class="para"><b>Using " do-while " loop.</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>26/07/2025</cite> OR <cite>July 26, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,51 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program that uses a "do-while" loop to print numbers from 1 to 10.</h4>  
+        <br><br> 
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        int i = 1;
+
+                        do{
+                            cout << i << " ";
+                            i++;
+                        }while (i <= 10);
+
+                        getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+      <h4>How the program works?</h4>
+      <ol class="para">
+        <li>The program initializes a variable " i " to 1.( int i=1 )</li>
+        <li>The " do " block executes at least once, printing the value of " i " and incrementing " i " by 1.</li>
+        <li>The " while " condition " i <= 10 " is checked after the first execution of the " do " block.</li>
+        <li>If the condition is true, the " do " block executes again.</li>
+        <li>The loop continues until " i " is greater than 10.</li>
+      </ol><br>
+      <h4>Program Output:</h4>
+      <p class="para">The program will print numbers from 1 to 10: <br>1 2 3 4 5 6 7 8 9 10.</p>
+      <br>
+      <h4>Key differences from " while " loop:</h4>
+      <p class="para">The main difference between a " do-while " loop and a " while " loop is that the " do-while " loop executes the block of code at least once, regardless of the condition. <br>In contrast, a " while " loop may not execute the block of code at all if the condition is false.</p>
+      <br>
+      <h5>Summary:</h5>
+      <p class="para">This program demonstrates the basic use of a " do-while " loop in C++. <br>The " do-while " loop is useful when you need to execute a block of code at least once and then repeatedly based on a condition.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

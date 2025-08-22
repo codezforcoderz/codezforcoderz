@@ -39,10 +39,10 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write programs to convert celsius to farenheit and farenheit to celsius.</h1>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>07/08/2025</cite> OR <cite>August 7, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,19 +56,88 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program to convert celsius to farenheit.</h4>
+        <br><br> 
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+    #include &lt;iostream.h&gt;
+    #include &lt;conio.h>
+    #include &lt;stdio.h>
 
-              </code>
+    void main()
+    {
+	    clrscr();
+
+      int c,f;
+
+      cout << "Enter the temparature in celsius:"
+      cin >> c;
+
+      f = (c * 1.8) + 32;
+      
+      cout << "The temparature in farenheit is:"<< f << "farenheit.";
+      
+      getch();
+    }
+    </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
-      </div>
-      <br><br>
-         <p>Start text here</p>
-          <br><hr><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    <br><br>
+    <h4><b>How the program works?</b></h4>
+      <ol class="para">
+        <li>After including the header files we declared two variables <b>c</b> and <b>f</b> using <b>int</b> data type.</li>
+        <li>We asked user to input the temparature value in celsius then took the input using <b>cin >> c;</b> and stored the value in variable <b>c</b>.</li>
+        <li><b>f = (c * 1.8) + 32;</b> calculates the conversion of celsius to farenheit and stores the value in the variable <b>f</b>.</li>
+        <li><b>cout << f;</b> displays the answer to the user.</li>
+      </ol>
+    <h4><b>Example Output:</b></h4>
+      <ul class="para">
+        <li>If the user enters <b>0 celsius</b> the program will calculate the output and show 32 farenheit.</li>
+        <li>If the user enters <b>35 celsius</b> the program will calculate the output and show 92 farenheit.</li>
+      </ul>
+      <br><br><br>
+        <h4 class="para">This is a program to convert farenheit to celsius.</h4>
+        <br><br>
+        <div class="code-container">
+        <pre id="code-block">
+          <code>
+    #include &lt;iostream.h&gt;
+    #include &lt;conio.h>
+    #include &lt;stdio.h>
+    {
+      clrscr();
+
+      int c,f;
+
+      cout << "Enter the temparature in farenheit:";
+      cin >> f;
+
+      c = (f - 32) * 1.8;
+
+      cout << "The temparature in celsius is:" << c << "celsius."
+    }
+          </code>
+        </pre>
+        <button id="copy-btn" class="copy-btn">Copy</button>
+        </div>
+        <br><br>
+    <h4><b>How the program works?</b></h4>
+      <ol class="para">
+        <li>After including the header files we declared two variables <b>c</b> and <b>f</b> using <b>int</b> data type.</li>
+        <li>We asked user to input the temparature value in farenheit then took the input using <b>cin >> f;</b> and stored the value in variable <b>f</b>.</li>
+        <li><b>c = (f - 32) * 1.8;</b> calculates the conversion of farenheit to celsius and stores the value in the variable <b>c</b>.</li>
+        <li><b>cout << c;</b> displays the answer to the user.</li>
+      </ol>
+    <h4><b>Example Output:</b></h4>
+      <ul class="para">
+        <li>If the user enters <b>32 farenheit</b> the program will calculate the output and show 0 celsius.</li>
+        <li>If the user enters <b>113 farenheit</b> the program will calculate the output and show 45 celsius.</li>
+      </ul>
+        <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         
         <p id="footer_text"></p>

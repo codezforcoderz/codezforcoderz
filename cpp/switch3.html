@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to make a calculator.</h1>
+            <p class="para"><b>Using " switch " statement</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>28/07/2025</cite> OR <cite>July 28, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,93 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
-        
+        <h4 class="para">This is a basic program to make a functional calculator running on user's input uaing the " switch " statement.</h4> 
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
+        <p class="para"><u>*Note:</u><B> \n </B> and <b> endl </b> ends the line and starts a new one in the output screen, <b> \t </b> gives a tab space before text.</p>
         <div class="code-container">
           <pre id="code-block">
               <code>
+    #include &lt;iostream.h&gt;
+    #include &lt;conio.h>
+    #include &lt;stdio.h>
 
+    void main()
+    {
+	    clrscr();
+
+	    int choice;
+	    float num1,num2,result;
+
+	    cout << "This is a calculator :)";
+
+	    cout << "\n1.Addition.\n2.Subtraction.\n3.Multiplication.\n4.Division.";
+	    cout << "\nEnter your choice:";
+	    cin >> choice;
+
+	    cout << "Enter first number:";
+	    cin >> num1;
+
+	    cout << "Enter second number:";
+	    cin >> num2;
+
+	    switch(choice)
+	    {
+		    case 1:
+			result = num1 + num2;
+			cout << "The sum is:"<< num1 << "+" << num2 << "=" << result;
+		    break;
+
+		    case 2:
+			    result = num1 - num2;
+			    cout << "The subtracted value is:" << num1 << "-" << num2 << "=" << result;
+		    break;
+
+		    case 3:
+			    result = num1 * num2;
+			    cout << "The multlipicated value is:" << num1 << "*" << num2 << "=" << result;
+		    break;
+
+		    case 4:
+                            if( num2 !=0)
+                            {
+			            result = num1/num2;
+			            cout << "The division value is:" << num1 << "/" << num2 << "=" << result;
+                            }
+                            else
+                            {
+                                cout << "Error: Division by zero is not allowed.";
+                            }
+		    break;
+
+		    default:
+			    cout << "Invalid choice";
+		    break;
+	    }
+	getch();
+}
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4>
+        <ol class="para">
+            <li>The program displays a menu with options for basic arithmatic operations.</li>
+            <li>The user enters their choice (1-4) and the two numbers.</li>
+            <li>The " switch " statement checks the value of the " choice " entered by the user and performs the corresponding operation.</li>
+            <li>The program handles division by zero and invalid choices.</li>
+        </ol>
+        <br>
+        <h4>Example Outputs:</h4>
+        <ul class="para">
+            <li>If the user chooses addition and enters 10 and 20, the program will display "The sum is : 10 + 20 = 30".</li>
+            <li>If the user chooses division and enters 10 and 0, the program will display "Error: Division by zero is not allowed".</li>
+            <li>If the user chooses an option which is not listed, the program will display "Invalid choice".</li>
+        </ul>
+        <br>
+        <h5>Summary:</h5>
+        <p class="para">This program demonstrates the use of a " switch " statement to handle multiple cases and perform different operations based on user input.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

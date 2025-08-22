@@ -39,10 +39,10 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to declare an array of size 10 taking user input.</h1>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>30/07/2025</cite> OR <cite>July 30, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +56,60 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program to declare an array of size 10, take the user input to get the array elements and print the array.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h>
+                #include &lt;conio.h>
+                #include &lt;stdio.h>
 
+                void main()
+                {
+	                clrscr();
+
+	                int i,array[10];
+
+	                cout << "Enter the elements of the array:";
+	                for(i=0;i<=9;i++)
+	                {
+		                cin >> array[i];
+	                }
+	                cout << "The array elements are :";
+	                for(i=0;i<=9;i++)
+	                {
+		                cout << " " << array[i];
+	                }
+	            getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4><b>How the program works?</b></h4>
+        <ol class="para">
+            <li>We declare an integer array <b>array[10]</b> to store the array elements.</li>
+            <li>We use a <b>for</b> loop to input 10 array elements from the user. Each element is stored in <b>array[10]</b>.</li>
+            <li>After inputting the elements, we use another <b>for</b> loop to display the array elements.</li>
+        </ol>
+        <br>
+        <h4><b>Step-by-Step Breakdown:</b></h4>
+        <ul class="para">
+            <li><b>int array[10];</b> declares an array of size 10.</li>
+            <li><b>for (i = 0; i < 10; i++)</b> loops through each element of the array.</li>
+            <li><b>cin >> array[i];</b> inputs each element from the user.</li>
+            <li><b>cout << array[i] << " ";</b> displays each element of the array.</li>
+        </ul>
+        <br>
+        <h4><b>Example Output:</b></h4>
+        <p class="para">If the user enters the numbers 1 to 10, the program will display: <br> 1 2 3 4 5 6 7 8 9 10.</p>
+        <br>
+        <h4><b>Summary:</b></h4>
+        <p class="para">When you run this program, it will prompt you to enter 10 array elements. After entering the elements, it will display the array elements.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

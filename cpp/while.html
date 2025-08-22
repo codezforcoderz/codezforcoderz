@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to print the numbers from 1 to 10.</h1>
+            <p class="para"><b>Using " while " loop.</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>27/07/2025</cite> OR <cite>July 27, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,49 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program that uses a " while " loop to print the numebrs from 1 to 10.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        int i = 1;
+
+                        while(i <= 10)
+                        {
+                            cout << i << " ";
+                            i++;
+                        }
+                        getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+      <h4>How the program works?</h4>
+      <ol class="para">
+        <li>The program initializes a variable " i " to 1.(int i = 1;)</li>
+        <li>The " while " loop checks the condition " i <= 10 ".</li>
+        <li>If the condition is true, the program prints the value of " i " and increments " i " by 1.( i++ )</li>
+        <li>The loop continues until " i " is greater than 10.</li>
+      </ol><br>
+      <h4>Program Output:</h4>
+      <p class="para">The programs will print the numbers from 1 to 10: <br>1 2 3 4 5 6 7 8 9 10.</p>
+      <br>
+      <h4>Example use case:</h4><br>
+      <p class="para">You can modift this program to print numbers within a specific range by changing the condition in the " while " loop. <br>For example, to print numbers from 1 to 20, you can change the condition to " i<= 20 ".</p>
+      <h5>Summary:</h5>
+      <p class="para">This program demonstrates the basic use of a " while " loop in C++. The " while " loop allows the program to execute <br> a block of code repeatedly as long as a condition is true.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

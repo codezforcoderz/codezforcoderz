@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to determine the day of the week</h1>
+            <p class="para"><b>Using " while " statement</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>28/07/2025</cite> OR <cite>July 28, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,84 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program to determine the day of the week based on a user input :</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        int day;
+
+                        cout << "Enter day number (1-7):";
+                        cin >> day;
+
+                        switch(day)
+                        {
+                            case 1:
+                                cout << "Monday";
+                            break;
+
+                            case 2:
+                                cout << "Tuesday";
+                            break;
+
+                            case 3:
+                                cout << "Wednesday";
+                            break;
+
+                            case 4:
+                                cout << "Thursday";
+                            break;
+
+                            case 5:
+                                cout << "Friday";
+                            break;
+
+                            case 6:
+                                cout << "Saturday";
+                            break;
+
+                            case 7:
+                                cout << "Sunday";
+                            break;
+
+                            default:
+                                cout << "Invalid day number";
+                            break;
+                        }
+                    getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4>
+        <ol class="para">
+            <li>The program asks the user to enter a day number (1-7).</li>
+            <li>The " Switch " statement checks the value of the " day " variable.</li>
+            <li>Based on the value of " day ", the program prints the corresponding day of the week.</li>
+            <li>If the user enters a invalid day number, the program prints "Invalid day number".</li>
+        </ol>
+        <br>
+        <h4>Example Outputs:</h4>
+        <ul class="para">
+            <li>If the user enters 1, the program will print " Monday ".</li>
+            <li>If the user enters 5, the program will print " Friday ".</li>
+            <li>If the user enters 10, the program will print "Invalid day number".</li>
+        </ul>
+        <br>
+        <h5>Summary:</h5>
+        <p class="para">This program demonstrates the basic use of a " switch " statement in C++. <br> The " switch " statement is a useful control structure for handling multiple cases based on a single variable.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

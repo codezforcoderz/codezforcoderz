@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to find if you have passed a test.</h1>
+            <p class="para"><b>Using " if-else " statement.</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>26/07/2025</cite> OR <cite>July 26, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,55 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a simple program in Turbo C++ that uses an " if-else " statement to determine whether a student has passes or failed based on their obtained marks.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
+                
+                void main()
+                {
+                    clrscr();
 
+                    int marks;
+
+                    cout << "Enter your marks:";
+                    cin >> marks;
+
+                    if (marks >= 40)
+                    {
+                        cout << "You have passed.";
+                    }
+                    else
+                    {
+                        cout << "You have failed.";
+                    }
+                    getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4><br>
+        <ol class="para">
+            <li>The program asks the user to enter their obtained marks. (cout << "Enter your marks:";)</li>
+            <li>The " if " statement checks whether the marks are greater than or equal to 40. (if (marks >= 40) )</li>
+            <li>If the condition is true, the program prints "You have passed".</li>
+            <li>If the condition is false, the program will execute the " else " part and "You have failed" will be displayed.</li>
+        </ol><br>
+        <h4>Example Output:</h4><br>
+        <ul class="para">
+            <li>If the user enters 50, the program will print "You have passed".</li>
+            <li>If the user enters 30, the program will print "You have failed".</li>
+        </ul>
+        <h5>Summary:</h5><br>
+        <p class="para">This program demonstrates the basic use of an " if-else " statement in C++. This statement allows the program to make a decision based <br> on a condition and execute different blocls of code accordingly.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

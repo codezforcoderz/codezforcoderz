@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Write a program to calculate grade of a student</h1>
+            <p class="para"><b>Using " switch " statement</b></p>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>28/07/2025</cite> OR <cite>July 28, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -56,18 +57,81 @@
         <div class="text-center">
         <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
         </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
+        <h4 class="para">This is a basic program to calculate the grades of a student using the " switch " statement.</h4>
+        <br><br>
+        <p class="para">Recomended IDE : Turbo C++</p>
         
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include &lt;iostream.h&gt;
+                #include &lt;stdio.h&gt;
+                #include &lt;conio.h&gt;
 
+                void main()
+                {
+                        clrscr();
+
+                        char grade;
+
+                        cout << "Enter grade (A-F):";
+                        cin >> grade;
+
+                        switch(grade)
+                        {
+                            case 'A':
+                            case 'a':
+                                cout << "Excellent! Your score is 90-100.";
+                            break;
+
+                            case 'B':
+                            case 'b':
+                                cout << "Good job! Your score is 80-89."
+                            break;
+
+                            case 'C':
+                            case 'c':
+                                cout << "Fair. Your score is 70-79."
+                            break;
+
+                            case 'D':
+                            case 'd':
+                                cout << "Poor. Your score is 60-69."
+                            break;
+
+                            case 'F':
+                            case 'f':
+                                cout << "Shouldn't have taken that test."
+                            break;
+                            
+                            default:
+                                cout << "Invalid grade."
+                            break;
+                        }
+                    getch();
+                }
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
       <br><br>
-         <p>Start text here</p>
+        <h4>How the program works?</h4>
+        <ol class="para">
+            <li>The program asks the user to enter a grade.(A-F)</li>
+            <li>The " switch " statement checks the value of the " grade " variable.</li>
+            <li>Based on the value of " grade ", the program prints a message indicating the corresponding score range.</li>
+            <li>The program handles both uppercase and lowercase grades.</li>
+            <li>If the user enters an invalid grade, the program prints "Invalid grade".</li>
+        </ol>
+        <br>
+        <h4>Example Outputs:</h4>
+        <ul class="para">
+            <li>If the user enters " A " or " a ", the program will print "Excellent! Your score is 90-100.</li>
+            <li>If the user enters " E " or " e ", the program will print " Invalid grade ".</li>
+        </ul>
+        <br>
+        <h5>Summary:</h5>
+        <p class="para">This program dedmonstrates the use of a " switch " statement with multiple cases and default handling in C++.</p>
           <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         

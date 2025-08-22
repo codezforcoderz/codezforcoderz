@@ -1,0 +1,282 @@
+<!doctype html>
+<!-- using bootstrap v5.3 -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CodeZ for CoderZ</title>
+        <link rel="stylesheet" href="../styles/course_style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Bootstrap code -->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">CodeZ for CoderZ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cpp.html">C++</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="c.html">C</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <br><br><br><br>
+        <figure>
+            <blockquote class="blockquote">
+            <h1>Variables and Data types in C++</h1>
+            </blockquote><br>
+            <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
+            Published on <cite>19/07/2025</cite> OR <cite>July 19, 2025</cite>
+            </figcaption>
+        </figure>
+        <br>
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page" style="margin-left: 5%;"><a href="../cpp.html" style="color: #720095;">< Back to C++</li></a>
+        </ol>
+        </nav>
+        <hr>
+        <br><br>
+        <div class="text-center">
+        <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
+        </div><br><br>
+        <h3><b>Variables in C++:-</b></h3>
+        <p class="para"><b>Variable</b> is a named storage location that holds a value.They make code more readable and maintainable and they allow for efficient data storage and manipulation. <br>Variables have:
+            <ul class="para">
+                <li><b>Name:</b> A unique identifier given to the variable.</li>
+                <li><b>Data type:</b> Determines the type of value the variable can hold.(eg: int,float,char).</li>
+                <li><b>Value:</b> The actual data stored in the variable.</li>
+            </ul>
+        </p>
+        <h5 class="para"><b>Key aspects:</b></h5>
+        <ul class="para">
+            <li>Variables must be declared before use.</li>
+            <li>Variables can be initialized with a value at declaration.</li>
+            <li>Variables can be assigned new values during program execution.</li>
+        </ul>
+        <h5 class="para"><b>For example:</b></h5>
+        <p class="para">int x = 10; //declare and initialize an integer variable
+        </p>
+        <p class="para">x = 20; //assign a new value to the variable </p>
+        <h5 class="para"><b>Types of variables in C++:</b></h5>
+        <p class="para">Variables in C++ can be classified based on their scope, lifetime and behaviour. Here are the main types</p>
+          <ol class="para">
+            <li><b>Local variables:</b>
+              <ul class="para">
+                <li>Declared within a block.</li>
+                <li>Accessible only within that block.</li>
+                <li>Created and destroyed automatically when the block is executed.</li>
+              </ul>
+            </li>
+            <li><b>Global variables:</b>
+              <ul class="para">
+                <li>Declared outside all blocks.</li>
+                <li>Accessible from any part of the program.</li>
+                <li>Retain their values throughout the program's execution.</li>
+              </ul>
+              </li>
+              <li><b>Static variables:</b>
+                <ul class="para">
+                  <li>Retain their values between function calls.</li>
+                  <li>initialized only once, at program startup.</li>
+                  <li>Can be local or global.</li>
+                </ul>
+              </li>
+              <li><b>Automatic variables:</b>
+                <ul class="para">
+                  <li>Created and destroyed automatically when a block is executed.</li>
+                  <li>Local variables are automatic by default.</li>
+                </ul>
+              </li>
+              <li><b>External variables:</b>
+                <ul class="para">
+                  <li>Defined in another source file.</li>
+                  <li>Declared using the "extern" keyword.</li>
+                  <li>Allow sharing of variables between source files</li>
+                </ul>
+              </li>
+              <li><b>Constant variables:</b>
+                <ul class="para">
+                  <li>Values cannot be changed once initialized.</li>
+                  <li>Declared using the "const" keyword.</li>
+                </ul>
+              </li>
+          </ol>
+          <p class="para">Each type of variable has it's own use cases and benifits. Understanding the difference is essential for effective programming.</p>
+        <h3><b>Data types in C++:</b></h3>
+        <p class="para">In C++, data types determine the type of value a variable can hold, the amount of memory it occupies and the operations that can be performed on it. Here are some basic data types in C++:</p>
+            <ol class="para">
+                <li><b>Integer data type:</b>
+                    <p class="para"> The <b>"int"</b> data type is used to store whole numbers, both positive and negative. <br> <u>Here are some key points:</u></p>
+                    <ul class="para">
+                      <li><b>Size: </b>Typically 4 bytes(32 bits) in size.</li>
+                      <li><b>Usage: </b>Used for counting, indexing and storing integer values.</li>
+                    </ul>
+                </li>
+                <br>
+            <p class="para"><u>Here is a simple program using <b>"int" </b>data type:</u></p><br><br>
+        
+                <div class="code-container">
+                  <pre id="code-block">
+              <code>
+                #include&lt;iostream.h&gt;
+                #include&lt;conio.h&gt;
+                #include&lt;stdio.h&gt;
+                void main()
+                {
+                  clrscr();
+                  int num1,num2;
+
+                  cout&lt;&lt;"Enter an integer";
+                  cin&gt;&gt; num1;
+
+                  cout&lt;&lt;"Enter another integer";
+                  cin&gt;&gt; num2;
+
+                  cout&lt;&lt;"The numbers you entered are" &lt;&lt; num1 &lt;&lt; "and" &lt;&lt; num2;
+
+                  getch();
+                }
+
+              </code>
+          </pre>
+          <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+      <br><br>
+      <p class="para">The above program,</p>
+      <ul class="para">
+        <li>Declares and initializes "int".</li>
+        <li>Prints the value of the variables.</li>
+        <li>Asks the suer to input an integer.</li>
+        <li>Prints the input integer.</li>
+      </ul><br>
+      <p class="para">When to use int?</p>
+        <ul class="para">
+          <li>When working with whole numbers.</li>
+          <li>When you need to perform arithmatic operations on integers.</li>
+        </ul>
+      <br>
+      <li><b>Floating point data type or simply float:</b></li>
+        <p class="para">The "Float" data type is used to store decimal numbers with single precision <br> <u>Here are some key points:</u></p>
+        <ul class="para">
+          <li><b>Size: </b> Typically 4 bytes(32 bits) in size.</li>
+          <li><b>Precision: </b>About 6-7 decimal digits.</li>
+          <li><b>Usage: </b>Used for calculations requiring decimal numbers, such as scientific simulations,graphics and game.</li>
+        </ul>
+      <br>
+        <p class="para"><u>Here is a simple program using <b>"Float"</b>data type:</u></p>
+        <div class="code-container">
+          <pre id="code-block">
+              <code>
+                #include&lt;iostream.h&gt;
+                #include&lt;conio.h&gt;
+                #include&lt;stdio.h&gt;
+                void main()
+                {
+                  clrscr();
+                  float num1,num2;
+
+                  cout&lt;&lt;"Enter a number with decimal point";
+                  cin&gt;&gt; num1;
+
+                  cout&lt;&lt;"Enter another number with decimal point";
+                  cin&gt;&gt; num2;
+
+                  cout&lt;&lt;"The numbers you entered are" &lt;&lt; num1 &lt;&lt; "and" &lt;&lt; num2;
+
+                  getch();
+                }
+
+              </code>
+          </pre>
+          <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+      <br><br>
+      <p class="para">The above program,</p>
+      <ul class="para">
+        <li>Decalres and initializes "float" data type.</li>
+        <li>Asks the user to input a number with a decimal point.</li>
+        <li>Prints the user input number.</li>
+      </ul>
+      <br>
+      <p class="para">When to use "Float"?</p>
+      <ul class="para">
+        <li>When working with decimal numbers that don't require high precision.</li>
+        <li>When memory is concern and single precision is sufficient.</li>
+      </ul><br>
+      <p class="para">Note that float has limited precision, so it may not be suitable for all applications.</p>
+      <li><b>Character type data type:</b></li>
+      <p class="para">The "char" data type is used to store single characters, such as letters,digits or special characters.<br class="para"><u>Here are some key points:</u></p>
+      <ul class="para">
+        <li><b>Size: </b>Typically 1 byte(8 bits) in size.</li>
+        <li><b>Usage: </b>Used for sorting and manipulating individual characters, such as in strings or character arrays.</li>
+      </ul><br>
+      <p class="para"><u>Here is a simple program using <b>"char"</b> data type:</u></p>
+      <div class="code-container">
+          <pre id="code-block">
+              <code>
+                #include&lt;iostream.h&gt;
+                #include&lt;conio.h&gt;
+                #include&lt;stdio.h&gt;
+                void main()
+                {
+                  clrscr();
+                  char a;
+
+                  cout&lt;&lt;"Enter a character";
+                  cin&gt;&gt; a;
+
+                  cout&lt;&lt;"The character you entered is:" &lt;&lt; a;
+
+                  getch();
+                }
+
+              </code>
+          </pre>
+          <button id="copy-btn" class="copy-btn">Copy</button>
+      </div>
+      <br><br>
+      <p class="para">The above program,</p>
+      <ul class="para">
+        <li>Decalres and initializes "char" data type.</li>
+        <li>Asks the user to input a character.</li>
+        <li>Prints the user input character.</li>
+      </ul>
+      <p class="para">When to use char?</p>
+      <ul class="para">
+        <li>When working with individual characters.</li>
+        <li>When you need to store and manipulate ASCII characters.</li>
+      </ul>    
+    </ol>
+    <p class="para">These are the basic data types in C++.Each data type has it's own range, size and usage. Choosing the right data type is essential for efficient memory use and accurate calculations.</p>
+      <br><br>
+        <br><hr><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+        
+        <p id="footer_text"></p>
+        </footer>
+        <script type="text/javascript" src="../scripts/footer_text.js"></script>
+        <script type="text/javascript" src="../scripts/code_block.js"></script>
+        <!-- Footer icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- End of footer icons -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

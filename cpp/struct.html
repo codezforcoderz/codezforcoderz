@@ -39,10 +39,11 @@
         <br><br><br><br>
         <figure>
             <blockquote class="blockquote">
-            <h1>Write a program to print hello world</h1>
+            <h1>Structure of a C++ program</h1>
+            <h2>Print "Hello world"</h2>
             </blockquote><br>
             <figcaption class="blockquote-footer" style="color: #720095; margin-left: 5%;">
-            Published on <cite>09/07/2025</cite> OR <cite>July 9, 2025</cite>
+            Published on <cite>15/07/2025</cite> OR <cite>July 15, 2025</cite>
             </figcaption>
         </figure>
         <br>
@@ -52,23 +53,73 @@
         </ol>
         </nav>
         <hr>
-        <br><br>
-        <div class="text-center">
-        <!-- <img src="../assets/sample.jpg" class="img-fluid" alt="image" style="width: 600px;"> -->
-        </div><br><br>
-        <p class="para">This is a basic program to <br><br> Recomended IDE : Turbo C++</p>
-        
+        <h3>First we will take a program as an example:</h3><br>
+        <p class="para">This is a simple program to print "Hello world in C++. We will take this program as an example to understand the structure of the program.</p>
         <div class="code-container">
           <pre id="code-block">
               <code>
+                #include&lt;iostream.h&gt;
+                #include&lt;conio.h&gt;
+                #include&lt;stdio.h&gt;
+                void main()
+                {
+                  clrscr();
+
+                  cout &lt;&lt; "Hello world";
+
+                  getch();
+                }
 
               </code>
           </pre>
           <button id="copy-btn" class="copy-btn">Copy</button>
       </div>
-      <br><br>
-         <p>Start text here</p>
-          <br><hr><br><br><br><br><br><br><br><br><br><br>
+      <p class="para">So, the structure of the program starts with: </p>
+      <ol class="para">
+        <li><b>Processing directives</b>
+          <ul class="para">
+            <li>Header files:
+              <ul class="para">
+                <li>#include&lt;iostream.h&gt;</li>
+                <li>#include&lt;conio.h&gt;</li>
+                <li>#include&lt;stdio.h&gt;</li>
+              </ul>
+              <p>These are called the <b> "Header files" </b> of a program which are the most important things to execute the program properly.</p>
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li><b>Main function</b>
+          <ul class="para">
+            <li>Entery point of the program.</li>
+            <p>Here <b>void main()</b> is the <b> "Main function"</b> of the program and the program codes are written inside this main function using <b>{ }</b>(curly brackets).</p>
+          </ul>
+        </li>
+        <br>
+        <li><b>Statements and expressions</b>
+        <ul class="para">
+          <li>Perform calculations, input/output, operations and control flow.</li>
+          <p>Here, <b>cout&lt;&lt; "Hello world" </b> is used to display the text written inside the double quotations.</p>
+        </ul>
+      </li>
+      </ol>
+      <p class="para">At last we've used <b> "getch();"</b> to end the program and what is does is pause the program execution and keep the console window open until the user presses any key.</p>
+      <br>
+      <p class="para">So, the basic structure of a C++ program looks like this:</p>
+      <ul class="para">
+        <li>#include (header files) <br>
+          main function() <br>
+          { <br>
+            program code; <br>
+            statements and executions; <br>
+<br>
+            getch();<br>
+          }
+        </li>
+      </ul>
+      <p class="para">This structure provides a foundation for building C++ programs. As you progress, you'll learn more about each component and how to use them effectively.</p>
+      <p class="para"><b>Note: </b> Use <b>clrscr();</b> to clear the output screen before running the program.</p>
+      <br><hr><br><br><br><br><br><br><br><br><br><br>
         <footer>
         
         <p id="footer_text"></p>
